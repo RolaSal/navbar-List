@@ -66,8 +66,11 @@ if(arrayListOb[i].isDone){
   document.getElementById(`${arrayListOb[i].name}Id`).style.backgroundColor="thistle";
   document.getElementById(`${arrayListOb[i].name}Id`).style.textDecoration =" line-through";
   document.getElementById(`${arrayListOb[i].name}Id`).style.pointerEvents="none";
-  document.getElementById(`${arrayListOb[i].name}Id`).style.marginLeft="10px";
-  //document.getElementById(itemId).style.width="490px";
+  document.getElementById(`${arrayListOb[i].name}Id`).style.marginLeft="50px";
+  
+     document.getElementById(`${arrayListOb[i].name}Id`).style.width ="50%";
+
+
 }
 }
 
