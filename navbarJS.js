@@ -115,7 +115,7 @@ for(let i1=0;i1< arrayListOb.length; i1++){
     document.getElementById(itemId).style.marginLeft="10px";
     document.getElementById(itemId).style.width ="50%";
 
-    
+  //rola
 
 }
 
