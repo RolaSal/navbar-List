@@ -113,7 +113,7 @@ for(let i1=0;i1< arrayListOb.length; i1++){
     document.getElementById(itemId).style.textDecoration =" line-through";
     document.getElementById(itemId).style.pointerEvents="none";
     document.getElementById(itemId).style.marginLeft="10px";
-    document.getElementById(itemId).style.width ="50%";
+    document.getElementById(itemId).style.width ="40%";
 
   //rola
 
