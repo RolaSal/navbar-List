@@ -1,274 +1,238 @@
 
 body {
-  font-family: sans-serif;
-  font-size: 16px;
-}
+        font-family: sans-serif;
+        font-size: 16px;
+      }
 .webDev{
-  font-size: 20px;
-   }
+          font-size: 20px;
+        }
 
  .navBar{
-    background-color:lightgray;
-    color:purple;
-    margin: 0;
-    padding: 0;
+          background-color:lightgray;
+          color:purple;
+          margin: 0;
+          padding: 0;
 
         }
 
+  .inputWithIcon{
+                  margin-top: 50px;
+                  padding: auto;
+                }
 
 /* Mobile menu */
 .menue{
         list-style-type: none;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-}
+      }
 
 .menueItems{
-  padding: 7.5px 10px 7.5px 0;
-    list-style: none;
-
-}
+              padding: 7.5px 10px 7.5px 0;
+              list-style: none;
+            }
 
 .menueItems > a:hover {
-    color:white;
-  }
+                        color:white;
+                       }
 
  .toggle{
-   order: 1;
-   font-size: 20px;
- }
+          order: 1;
+          font-size: 20px;
+        }
 
  .menueItems{
-  order: 2;
-  width: 100%;
-  text-align: center;
-  display: none;
- }
+              order: 2;
+              width: 100%;
+              text-align: center;
+              display: none;
+            }
 
 
  .active .menueItems {
-  display: block;
-}
+                        display: block;
+                      }
 
  
 .filter{
-  background-color: rgb(184, 109, 184);
-  margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 100px;
-    height: 500px;
-    width: 300px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+          padding-top: 5px;
+          background-color: rgb(184, 109, 184);
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 10px;
+          height: 500px;
+          width: 75%;
+          padding-left: 50px;
+          padding-right: 50px;
+        }
 
 input{
-  width: 200px;
-  height: 40px;
-  float: left;
-  font-size: x-large;
-  background-color: white;
-  border: unset;
-}
+        width: 75%;
+        height: 40px;
+        float: left;
+        font-size: x-large;
+        background-color: white;
+        border: unset;
+      }
 input[type=text]:focus {
-  border: unset;
-}
+                          border: unset;
+                        }
 .addIcon{
-  width: 25px;
-  padding: 8.5px;
-  background-color: white;
-}
+          width: 25px;
+          padding: 8.5px;
+          background-color: white;
+        }
 
 .filterList{
-
-  list-style-type: none;
-  margin: 5;
- display: flex;
- flex-direction: column;
- /*justify-content: space-evenly;*/
-  align-items: flex-start;  
-  height: 200px;
-}
+              list-style-type: none;
+              margin: 5;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;  
+              height: 200px;
+            }
 
 
 
 .FilterItem{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: white;
+              padding-right: 10px;
+              padding-bottom: 10px;
+              padding-left: 6px;
+              padding-top: 10px;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 15px;
+              width: 75%;
+            }
 
-  background-color: white;
+.doneItem{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 6px;
+            padding-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            background-color: thistle;
+            text-decoration: line-through;
+            pointer-events: none;
+            width: 70%;
+          }
 
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 6px;
-  padding-top: 10px;
- 
-  margin: 20px;
-  width: 250px;
-  
-}
+.deleteItem{
+              display: none;
+            }
 
-@media all and (min-width: 700px){
-  .menue {
-    justify-content: center;
-}
-.webDev {
-    flex: 1;
-}
+ /*tablet*/
+@media all and (min-width: 700px)
+  {
+    .menue {
+              justify-content: center;
+            }
 
+    .webDev {
+              flex: 1;
+            }
 
-.filter{
-  background-color: rgb(184, 109, 184);
-  margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 100px;
-    height: 500px;
-    width: 450px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+    .filter{
+              padding-top: 10px;
+              background-color: rgb(184, 109, 184);
+              height: 500px;
+              padding-left: 50px;
+              padding-right: 50px;
+            }
 
-input{
-  width: 270px;
-  height: 40px;
-  float: left;
-  font-size: x-large;
-  background-color: white;
-  border: unset;
-}
-input[type=text]:focus {
-  border: unset;
-}
-.addIcon{
-  width: 25px;
-  padding: 8.5px;
-  background-color: white;
-}
+    input{
+            height: 40px;
+            float: left;
+            font-size: x-large;
+            background-color: white;
+            border: unset;
+          }
+          
+    input[type=text]:focus{
+                            border: unset;
+                          }
+    .addIcon{
+              width: 25px;
+              padding: 8.5px;
+              background-color: white;
+            }
 
-.filterList{
+    .filterList{
+                  list-style-type: none;
+                  margin: 5;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;  
+                  height: 200px;
+                }
+   }
 
-  list-style-type: none;
-  margin: 5;
- display: flex;
- flex-direction: column;
- /*justify-content: space-evenly;*/
-  align-items: flex-start;  
-  height: 200px;
-}
-
-
-.FilterItem{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background-color: white;
-
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 6px;
-  padding-top: 10px;
- 
-  margin: 20px;
-  width: 350px;
-  
-}
-
-
-}
 
 /*Desktop*/
-@media (min-width: 960px){
-  .menue {
-    align-items: flex-start;     
-    flex-wrap: nowrap;
-}
-.webDev {
-    order: 0;
-}
-.menueItems {
-  margin-top: 20px;
-    order: 1;
-    display: block; 
-    width: auto;
-    padding-right: 40px;
-}
+@media (min-width: 960px)
+  {
+      .menue {
+                align-items: flex-start;     
+                flex-wrap: nowrap;
+              }
+    .webDev {
+              order: 0;
+            }
+    .menueItems {
+                  margin-top: 20px;
+                  order: 1;
+                  display: block; 
+                  width: auto;
+                  padding-right: 40px;
+                }
 
-.toggle {
-  display: none;
-}
+    .toggle {
+              display: none;
+            }
 
 
-.filter{
-  background-color: rgb(184, 109, 184);
-  margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 100px;
-    height: 800px;
-    width: 850px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+    .filter{
+              background-color: rgb(184, 109, 184);
+              height: 800px;
+            }
 
-input{
-  width: 400px;
-  height: 40px;
-  float: left;
-  font-size: x-large;
-  background-color: white;
-  border: unset;
-}
-input[type=text]:focus {
-  border: unset;
-}
-.addIcon{
-  width: 25px;
-  padding: 8.5px;
-  background-color: white;
-}
+    input{
+            height: 40px;
+            float: left;
+            font-size: x-large;
+            background-color: white;
+            border: unset;
+          }
 
-.filterList{
+    input[type=text]:focus {
+                              border: unset;
+                            }
+    .addIcon{
+              width: 25px;
+              padding: 8.5px;
+              background-color: white;
+            }
 
-  list-style-type: none;
-  margin: 10;
- display: flex;
- flex-direction: column;
- /*justify-content: space-evenly;*/
-  align-items: flex-start;  
-  height: 400px;
-}
-
-/*.filterItem{
-  background-color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 6px;
-  margin: 10px;
-  width: 450px;
-  float: left;
-}*/
-
-.FilterItem{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background-color: white;
-
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 6px;
-  padding-top: 10px;
- 
-  margin: 20px;
-  width: 500px;
-  
-}
-
-}
+    .filterList{
+                  list-style-type: none;
+                  margin: 10;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;  
+                  height: 400px;
+                }
+  }
 
 
 

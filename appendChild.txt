@@ -1,0 +1,25 @@
+arrayList_toDoItems.forEach(element => {
+  let filterDiv = document.getElementById("allItems");
+let task = document.createElement("div");
+task.className = "FilterItem";
+let nameOfTask = document.createElement("span");
+let doneIcon = document.createElement("img");
+doneIcon.src = "check.png";
+let deleteIcon = document.createElement("img");
+deleteIcon.src = "delete.png";
+let iconesSpan = document.createElement("span");
+iconesSpan.appendChild(doneIcon);
+iconesSpan.appendChild(deleteIcon);
+
+  task.id = "";
+  task.id += `${element.name}Id`;
+  nameOfTask.innerHTML = `${element.name}`;
+  doneIcon.onclick = doneItem(task.id);
+  deleteIcon.onclick = deleteItem(task.id);
+   
+   task.appendChild(nameOfTask);
+   task.appendChild(iconesSpan);
+   filterDiv.appendChild(task);
+   
+
+});

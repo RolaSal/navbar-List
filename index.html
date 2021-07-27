@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <link  rel="stylesheet" type="text/css" href="navbarStyle.css">
+</head>
+
+<html>
+
+  <body>
+
+    <nav class="navBar">
+      <ul class= "menue" id="list1" > 
+        <li class="webDev"> <h3>WebDev.</h3></li>  
+        <li class="menueItems"><a>Home</a></li>
+        <li class="menueItems"><a>about</a></li>
+        <li class="menueItems"><a>contact</a></li>
+         <li class="toggle" onclick="toggleMenu()"><img id="icon" src="menue.png" class="icon" ></li>  
+      </ul>
+    </nav>
+
+    <div class="filter" id="mainFilter">
+      <div class="inputWithIcon">
+        <input type="text" class="fname" id="textInput" placeholder="Enter The Work" onkeyup="filtering()"> 
+        <img class="addIcon" id="addIcon" src="button.png" onclick="addItem()">
+      </div>
+      <div id="allItems"></div>          
+    </div>
+
+    <script type="text/javascript" src="navbarJS.js"></script>
+
+    </body>
+
+</html>
